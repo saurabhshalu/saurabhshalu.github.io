@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body,
 body div,
 code,
@@ -28,7 +35,8 @@ ul {
 	font-size: 100%;
 	vertical-align: bottom;
 	background: 0 0;
-	box-sizing: border-box
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box
 }
 
 figure,
@@ -69,7 +77,9 @@ body {
   height: 80px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #waiting div {
@@ -77,11 +87,30 @@ body {
 	border: 4px solid #3477db;
 	opacity: 1;
 	border-radius: 50%;
-	animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+	-webkit-animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+	        animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
 
 #waiting div:nth-child(2) {
-	animation-delay: -0.5s;
+	-webkit-animation-delay: -0.5s;
+	        animation-delay: -0.5s;
+}
+
+@-webkit-keyframes lds-ripple {
+	0% {
+		top: 36px;
+		left: 36px;
+		width: 0;
+		height: 0;
+		opacity: 1;
+	}
+	100% {
+		top: 0px;
+		left: 0px;
+		width: 72px;
+		height: 72px;
+		opacity: 0;
+	}
 }
 
 @keyframes lds-ripple {
@@ -107,6 +136,8 @@ body {
 	width: 100%;
 	min-height: 600px;
 	background: #3477db;
+	-webkit-transition: min-height .5s linear;
+	-o-transition: min-height .5s linear;
 	transition: min-height .5s linear
 }
 
@@ -116,6 +147,8 @@ body {
 	top: 0;
 	height: 100%;
 	overflow: hidden;
+	-webkit-transition: .5s linear;
+	-o-transition: .5s linear;
 	transition: .5s linear;
 	cursor: pointer
 }
@@ -129,7 +162,9 @@ body {
 	bottom: 0;
 	height: 98%;
 	position: absolute;
-	transform: translateX(-50%)
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%)
 }
 
 .designer {
@@ -138,11 +173,15 @@ body {
 
 .coder img {
 	left: 50vw;
+	-webkit-transition: .3s linear;
+	-o-transition: .3s linear;
 	transition: .3s linear
 }
 
 .designer img {
 	left: 50vw;
+	-webkit-transition: .3s linear;
+	-o-transition: .3s linear;
 	transition: .3s linear
 }
 
@@ -164,11 +203,15 @@ body {
 
 .code .description {
 	right: 15vw;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
 	transition: all .5s ease
 }
 
 .design .description {
 	left: 15vw;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
 	transition: all .5s ease
 }
 
@@ -177,6 +220,8 @@ body {
 	font-weight: 900;
 	margin-bottom: 20px;
 	color: #cbf5db;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
 	transition: all .5s ease
 }
 
@@ -193,6 +238,8 @@ body {
 .code,
 .design {
 	opacity: 1;
+	-webkit-transition: all .25s linear;
+	-o-transition: all .25s linear;
 	transition: all .25s linear
 }
 
@@ -252,14 +299,20 @@ body {
 	background: #f5f5f5;
 	width: 60vw;
 	left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	border-radius: 10px;
 	border: 1px solid #000
 }
 
 .skills .col {
-	flex: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 	position: relative;
 	border-right: 1px solid #ccc;
 	text-align: center;
@@ -302,15 +355,21 @@ body {
 }
 
 header {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	height: 92px;
 	background: #141c3a;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	z-index: 5;
 	padding-left: 10vw;
 	padding-right: 10vw;
 	position: fixed;
 	width: 100%;
+	-webkit-transition: all .5s linear;
+	-o-transition: all .5s linear;
 	transition: all .5s linear
 }
 
@@ -324,9 +383,15 @@ main {
 	width: 65px;
 	background: #fff;
 	border-radius: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center
 }
 
 .logo img {
@@ -414,6 +479,8 @@ nav ul li a:hover {
 @media screen and (max-width:768px) {
 	header {
 		height: 70px;
+		-webkit-transition: all .25s ease-in-out;
+		-o-transition: all .25s ease-in-out;
 		transition: all .25s ease-in-out
 	}
 	main {
@@ -439,6 +506,8 @@ nav ul li a:hover {
 		background: #1b2138;
 		opacity: 0;
 		visibility: hidden;
+		-webkit-transition: all .2s linear;
+		-o-transition: all .2s linear;
 		transition: all .2s linear
 	}
 	.nav-container ul {
@@ -453,16 +522,24 @@ nav ul li a:hover {
 		margin-bottom: 10px
 	}
 	.nav-container ul li:nth-child(1) a {
-		transition-delay: .2s
+		-webkit-transition-delay: .2s;
+		     -o-transition-delay: .2s;
+		        transition-delay: .2s
 	}
 	.nav-container ul li:nth-child(2) a {
-		transition-delay: .3s
+		-webkit-transition-delay: .3s;
+		     -o-transition-delay: .3s;
+		        transition-delay: .3s
 	}
 	.nav-container ul li:nth-child(3) a {
-		transition-delay: .4s
+		-webkit-transition-delay: .4s;
+		     -o-transition-delay: .4s;
+		        transition-delay: .4s
 	}
 	.nav-container ul li:nth-child(4) a {
-		transition-delay: .5s
+		-webkit-transition-delay: .5s;
+		     -o-transition-delay: .5s;
+		        transition-delay: .5s
 	}
 	.nav-container ul li:not(:first-child) {
 		margin-left: 0
@@ -474,7 +551,11 @@ nav ul li a:hover {
 		color: #fff;
 		font-size: 24px;
 		font-weight: 600;
-		transform: translateY(-20px);
+		-webkit-transform: translateY(-20px);
+		    -ms-transform: translateY(-20px);
+		        transform: translateY(-20px);
+		-webkit-transition: all .2s ease;
+		-o-transition: all .2s ease;
 		transition: all .2s ease
 	}
 	.nav-open {
@@ -509,18 +590,26 @@ nav ul li a:hover {
 }
 
 #nav:checked+.nav-open {
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
 	margin-top: 10px;
 	margin-right: 5px
 }
 
 #nav:checked+.nav-open i {
 	background: #fff;
-	transition: transform .2s ease
+	-webkit-transition: -webkit-transform .2s ease;
+	transition: -webkit-transform .2s ease;
+	-o-transition: transform .2s ease;
+	transition: transform .2s ease;
+	transition: transform .2s ease, -webkit-transform .2s ease
 }
 
 #nav:checked+.nav-open i:nth-child(1) {
-	transform: translateY(6px) rotate(180deg)
+	-webkit-transform: translateY(6px) rotate(180deg);
+	    -ms-transform: translateY(6px) rotate(180deg);
+	        transform: translateY(6px) rotate(180deg)
 }
 
 #nav:checked+.nav-open i:nth-child(2) {
@@ -529,7 +618,9 @@ nav ul li a:hover {
 }
 
 #nav:checked+.nav-open i:nth-child(3) {
-	transform: translateY(-6px) rotate(90deg)
+	-webkit-transform: translateY(-6px) rotate(90deg);
+	    -ms-transform: translateY(-6px) rotate(90deg);
+	        transform: translateY(-6px) rotate(90deg)
 }
 
 #nav:checked~.nav-container {
@@ -541,7 +632,9 @@ nav ul li a:hover {
 #nav:checked~.nav-container ul li a {
 	opacity: 1;
 	visibility: visible;
-	transform: translateY(0)
+	-webkit-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	        transform: translateY(0)
 }
 
 .hidden {
@@ -564,9 +657,14 @@ nav ul li a:hover {
 }
 
 .portfolio .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center
 }
 
 .portfolio .card {
@@ -575,11 +673,13 @@ nav ul li a:hover {
 	max-height: 300px;
 	background: 0 0;
 	margin: 10px;
-	perspective: 1000px;
+	-webkit-perspective: 1000px;
+	        perspective: 1000px;
 	cursor: default;
 	background: #3477db;
 	border: 2px solid #fff;
-	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, .2), 0 6px 20px 0 rgba(255, 255, 255, .19)
+	-webkit-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, .2), 0 6px 20px 0 rgba(255, 255, 255, .19);
+	        box-shadow: 0 4px 8px 0 rgba(255, 255, 255, .2), 0 6px 20px 0 rgba(255, 255, 255, .19)
 }
 
 .portfolio .card img {
@@ -592,6 +692,8 @@ nav ul li a:hover {
 	position: absolute;
 	top: 0;
 	height: 100%;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
 	transition: .5s;
 	cursor: pointer;
 	overflow: hidden;
@@ -602,10 +704,19 @@ nav ul li a:hover {
 .portfolio .box2 {
 	height: 0%;
 	background-color: #3477db;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center
 }
 
 .portfolio .box1:hover~.box2 {
@@ -648,13 +759,24 @@ nav ul li a:hover {
 	height: 250px;
 	width: 100%;
 	background: #3477db;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center
 }
 
 .contact .items {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex
 }
 
@@ -665,6 +787,8 @@ nav ul li a:hover {
 	background: #fff;
 	margin: 5px;
 	position: relative;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
 	transition: all .5s ease
 }
 
@@ -677,7 +801,11 @@ nav ul li a:hover {
 
 .contact .items .item:hover {
 	background: #e2e2e2;
-	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
 	transition: all .5s ease
 }
 
@@ -697,10 +825,14 @@ nav ul li a:hover {
 @media screen and (max-width:1300px) {
 	.code .description {
 		right: 5vw;
+		-webkit-transition: all .5s ease;
+		-o-transition: all .5s ease;
 		transition: all .5s ease
 	}
 	.design .description {
 		left: 5vw;
+		-webkit-transition: all .5s ease;
+		-o-transition: all .5s ease;
 		transition: all .5s ease
 	}
 }
@@ -708,14 +840,21 @@ nav ul li a:hover {
 @media screen and (max-width:1100px) {
 	.description h1 {
 		font-size: 54px;
+		-webkit-transition: all .5s linear;
+		-o-transition: all .5s linear;
 		transition: all .5s linear
 	}
 	.description p {
 		display: none;
+		-webkit-transition: all .5s linear;
+		-o-transition: all .5s linear;
 		transition: all .5s linear
 	}
 	.skills .row {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		background: 0 0;
 		border: none
 	}
@@ -732,15 +871,24 @@ nav ul li a:hover {
 		all: unset;
 		width: 100%;
 		height: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: row-reverse;
-		align-items: flex-end;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: reverse;
+		    -ms-flex-direction: row-reverse;
+		        flex-direction: row-reverse;
+		-webkit-box-align: end;
+		    -ms-flex-align: end;
+		        align-items: flex-end;
 		background: #3477db
 	}
 	.coder,
 	.designer {
 		all: unset;
-		flex: 1;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1;
+		        flex: 1;
 		overflow: hidden;
 		padding-top: 0;
 		padding-bottom: 0;
@@ -755,13 +903,19 @@ nav ul li a:hover {
 	}
 	.coder img {
 		left: 50%;
-		transform: translateX(-50%)
+		-webkit-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		        transform: translateX(-50%)
 	}
 	.designer img {
-		transform: translateX(50%)
+		-webkit-transform: translateX(50%);
+		    -ms-transform: translateX(50%);
+		        transform: translateX(50%)
 	}
 	.description h1 {
 		font-size: 6vw;
+		-webkit-transition: none;
+		-o-transition: none;
 		transition: none
 	}
 }
