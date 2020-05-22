@@ -2,7 +2,6 @@ var DesignerLeft = 50;
 
 
 window.addEventListener("load", function(){
-    this.document.getElementById("loader").style.display = "none";
     document.getElementsByClassName("designer")[0].addEventListener("mousemove", function(e) {
         var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
         var limitDesigner = vw/2;
