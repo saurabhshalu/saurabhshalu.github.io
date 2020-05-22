@@ -1,11 +1,10 @@
 var DesignerLeft = 50;
 
+
 window.addEventListener("load", function(){
-
     this.document.getElementById("loader").style.display = "none";
-
     document.getElementsByClassName("designer")[0].addEventListener("mousemove", function(e) {
-        const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+        var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
         var limitDesigner = vw/2;
         var adjust = limitDesigner - e.clientX;
         if(adjust>=0 && adjust<=limitDesigner) {
@@ -20,7 +19,7 @@ window.addEventListener("load", function(){
     });
 
     document.getElementsByClassName("coder")[0].addEventListener("mousemove", function(e) {
-        const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+        var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
         var limitDesigner = vw/2;
         var adjust = limitDesigner - e.clientX;
@@ -44,7 +43,7 @@ window.addEventListener('resize', (e) => {
 });
 
 function reset() {
-    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
     var limitDesigner = vw/2;
     document.getElementsByClassName("designer")[0].style.width = limitDesigner + 'px';
     document.getElementsByClassName("designerimg")[0].style.left = DesignerLeft + 'vw';
