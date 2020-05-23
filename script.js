@@ -36,6 +36,8 @@ window.addEventListener("load", function(){
     document.getElementsByClassName("designercoder")[0].addEventListener("mouseleave", function(e) {
         reset();
     });
+
+    document.getElementById('loader').style.display = "none";
 });
 window.addEventListener('resize', (e) => {
     reset();
