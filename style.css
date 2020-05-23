@@ -699,14 +699,10 @@ nav ul li a:hover {
 	        align-items: center;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
-	        justify-content: center
+	        justify-content: center;
 }
 
-.portfolio .box1:hover~.box2 {
-	height: 100%
-}
-
-.box2:hover {
+.portfolio .box1:hover~.box2, .box2:hover {
 	height: 100%
 }
 
@@ -720,7 +716,7 @@ nav ul li a:hover {
 	padding: 20px;
 	font-size: 20px;
 	text-align: center;
-	color: #2a2a2a
+	color: #2a2a2a;
 }
 
 .box2 a {
