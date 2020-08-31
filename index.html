@@ -10,7 +10,7 @@
   <title>Saurabh Verma</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1.1">
+  <link rel="stylesheet" href="style.css?v=1.2">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
         <ul>
           <li><a onclick="hideNav();" href="#home">Home</a></li>
           <li><a onclick="hideNav();" href="#skills">Skills</a></li>
-          <li><a onclick="hideNav();" href="#portfolio">Portfolio</a></li>
+          <li><a onclick="hideNav();" href="#projects">Projects</a></li>
           <li><a onclick="hideNav();" href="#contact">Contact Me</a></li>
         </ul>
       </div>
@@ -46,7 +46,7 @@
   <main id="home">
 
 
-    <a href="#portfolio">
+    <a href="#projects">
       <div class="designercoder">
         <div class="coder">
           <img class="coderimg" src="./img/coder.png" alt="coder">
@@ -96,15 +96,12 @@
             <li>UI/UX</li>
             <li>Web</li>
             <li>Mobile</li>
-            <li>Logos</li>
           </ul>
 
           <p class="list-title">Dev Tools:</p>
           <ul>
             <li>Adobe XD</li>
-            <li>Figma</li>
             <li>Photoshop</li>
-            <li>Adobe Illustrator</li>
             <li>Pen &amp; Paper</li>
           </ul>
         </div>
@@ -119,15 +116,12 @@
             <li>HTML</li>
             <li>CSS</li>
             <li>Javascript</li>
-            <li>JQuery</li>
             <li>Angular</li>
             <li>Java</li>
             <li>Spring Boot</li>
-            <li>PHP</li>
             <li>Flutter</li>
             <li>SQL</li>
             <li>MongoDB</li>
-            <li>Firebase</li>
           </ul>
         </div>
 
@@ -145,124 +139,178 @@
             <li>PyCharm</li>
             <li>Android Studio</li>
             <li>Github</li>
-            <li>Terminal</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="portfolio">
-      <div id="portfolio"></div>
-      <p class="title">Portfolio</p>
-      <div class="container">
-        <div class="card">
-          <div class="box1">
-            <img src="./img/grid/senti.png" alt="Sentiment Analysis of Tweets">
-          </div>
-          <div class="box2">
-            <p class="head">Sentiment Analysis Of Tweets</p>
-            <p class="content">By using this site, it will be easier to analyse tweets in bulk and visualize the
-              sentiments with graphs and charts.</p>
-            <a href="https://sentiapp.netlify.app" target="_blank" rel="noopener">
-              <p class="button">Open Website ⇨</p>
-            </a>
+    <section class="projects">
+      <div id="projects"></div>
+      <p class="title">projects</p>
+
+      <!-- <div class="container">   
+        <div class="cxd">
+          <div class="head">Sentiment Analysis Of Tweets</div>
+          <div class="content">By using this site, it will be easier to analyse tweets in bulk and visualize the sentiments with graphs and charts.</div>
+          <div class="links">
+            <a target="_blank" href="https://sentiapp.netlify.app" class="site" rel="noopener">Open Website</a>
+            <a target="_blank" href="https://github.com/saurabhshalu/Sentiment-Analysis-Frontend" class="gitcode" rel="noopener">View code</a>
           </div>
         </div>
-        <div class="card">
-          <div class="box1">
-            <img src="./img/grid/amini.png" alt="URL Shortner">
-          </div>
-          <div class="box2">
-            <p class="head">A Minimal URL</p>
-            <p class="content">A minimal url shortner web application which helps users to short the links. It will also
-              helps users to keep track of click count!</p>
-            <a href="https://amini.ml" target="_blank" rel="noopener">
-              <p class="button">Open Website ⇨</p>
-            </a>
+
+        <div class="cxd">
+          <div class="head">A Minimal URL</div>
+          <div class="content">A minimal url shortner web application which helps users to short the links. It will also helps users to keep track of click count!</div>
+          <div class="links">
+            <a target="_blank" href="https://amini.ml" class="site" rel="noopener">Open Website</a>
+            <a target="_blank" href="https://github.com/saurabhshalu/url-shortner-frontend" class="gitcode" rel="noopener">View code</a>
           </div>
         </div>
-        <div class="card">
-          <div class="box1">
-            <img src="./img/grid/gocorona.png" alt="Go Corona">
-          </div>
-          <div class="box2">
-            <p class="head">GO Corona</p>
-            <p class="content">This website is made to keep track of current covid19 cases, their recoveries, prevention
-              methods and much more. It uses external api to collect the data.</p>
-            <a href="https://github.com/saurabhshalu/COVID-19" target="_blank" rel="noopener"> 
-              <p class="button">View on Github ⇨</p>
-            </a>
+
+        <div class="cxd">
+          <div class="head">GO Corona</div>
+          <div class="content">This website is made to keep track of current covid19 cases, their recoveries, prevention methods and much more. It uses external api to collect the data.</div>
+          <div class="links">
+            <a target="_blank" href="https://github.com/saurabhshalu/COVID-19" class="gitcode" rel="noopener">View code</a>
           </div>
         </div>
-        <div class="card">
-          <div class="box1">
-            <img src="./img/grid/enotice.png" alt="E-Notice Board">
-          </div>
-          <div class="box2">
-            <p class="head">E-Notice Board</p>
-            <p class="content">It is an online platform where faculties can share the notice regarding college, and
-              students can access them easily. Teachers can also share notes. Various filter options available for easy
-              use.</p>
-            <a href="https://github.com/saurabhshalu/E-NoticeBoard" target="_blank" rel="noopener">
-              <p class="button">View on Github ⇨</p>
-            </a>
+
+        <div class="cxd">
+          <div class="head">E-Notice Board</div>
+          <div class="content">It is an online platform where faculties can share the notice regarding college, and students can access them easily. Teachers can also share notes. Various filter options available for easy use.</div>
+          <div class="links">
+            <a target="_blank" href="https://github.com/saurabhshalu/COVID-19" class="gitcode" rel="noopener">View code</a>
           </div>
         </div>
-        <div class="card">
-          <div class="box1">
-            <img src="./img/grid/tracker.png" alt="Task Tracker">
-          </div>
-          <div class="box2">
-            <p class="head">Task Tracker</p>
-            <p class="content">This website help users to track the task which are active or completed. It helps users
-              to track account of time which is taken by each task!</p>
-            <a href="https://github.com/saurabhshalu/TaskTracker" target="_blank" rel="noopener">
-              <p class="button">View on Github ⇨</p>
-            </a>
+
+        <div class="cxd">
+          <div class="head">Task Tracker</div>
+          <div class="content">This website help users to track the task which are active or completed. It helps users to track account of time which is taken by each task!</div>
+          <div class="links">
+            <a target="_blank" href="https://github.com/saurabhshalu/TaskTracker" class="gitcode" rel="noopener">View code</a>
           </div>
         </div>
-        <div class="card">
-          <div class="box1">
-            <img src="./img/grid/cfm.png" alt="College Fee Management System">
-          </div>
-          <div class="box2">
-            <p class="head">College Fee Management System</p>
-            <p class="content">This windows application is an platform where a university tracks all the records of
-              thier students It tracks all due payments.</p>
-            <a href="https://www.facebook.com/vermasoftware/" target="_blank" rel="noopener">
-              <p class="button">Request Demo ⇨</p>
-            </a>
+
+        <div class="cxd">
+          <div class="head">College Fee Management System </div>
+          <div class="content">This windows application is an platform where a university tracks all the records of thier students It tracks all due payments.</div>
+          <div class="links">
+            <a target="_blank" href="https://www.facebook.com/vermasoftware/" class="gitcode" rel="noopener">Request Demo</a>
           </div>
         </div>
-        <div class="card">
-          <div class="box1">
-            <img src="./img/grid/hrms.png" alt="Payroll Management System">
-          </div>
-          <div class="box2">
-            <p class="head">Payroll Management System</p>
-            <p class="content">This windows application mainly targets small scale to medium scale companies, which
-              helps to manage their employees data, genetate payment slip, export report in various formats, and much
-              more.</p>
-            <a href="https://www.youtube.com/watch?v=7bJfH4uRTAs" target="_blank" rel="noopener">
-              <p class="button">View Demo ⇨</p>
-            </a>
+
+        <div class="cxd">
+          <div class="head">Payroll Management System</div>
+          <div class="content">This windows application mainly targets small scale to medium scale companies, which helps to manage their employees data, genetate payment slip, export report in various formats, and much more.</div>
+          <div class="links">
+            <a target="_blank" href="https://www.youtube.com/watch?v=7bJfH4uRTAs" class="gitcode" rel="noopener">Watch Demo</a>
           </div>
         </div>
-        <div class="card">
-          <div class="box1">
-            <img src="./img/grid/cheque.png" alt="Cheque Prints">
-          </div>
-          <div class="box2">
-            <p class="head">Cheque Prints</p>
-            <p class="content">This helps the organization to print all the cheques of the vendors automatically, just
-              feed the data, and this software will do its job. This application is familiar with the layout of almost
-              every Bank.</p>
-            <a href="https://www.youtube.com/watch?v=G_AiY1cdCNQ" target="_blank" rel="noopener">
-              <p class="button">View Demo ⇨</p>
-            </a>
+
+        <div class="cxd">
+          <div class="head">Cheque Prints</div>
+          <div class="content">This helps the organization to print all the cheques of the vendors automatically, just feed the data, and this software will do its job. This application is familiar with the layout of almost every Bank.</div>
+          <div class="links">
+            <a target="_blank" href="https://www.youtube.com/watch?v=G_AiY1cdCNQ" class="gitcode" rel="noopener">Watch Demo</a>
           </div>
         </div>
+     
+      </div> -->
+      
+      <div id="slider" class="slider">
+        <div class="wrapper">
+          <div id="slides" class="slides">
+            <span class="slide">
+              <div class="c1">
+                <div class="head1">Sentiment Analysis of Tweets</div>
+                <div class="content1">By using this site, it will be easier to analyse tweets in bulk and visualize the sentiments with graphs and charts.</div>
+                <div class="links1">
+                  <a target="_blank" href="https://sentiapp.netlify.app" class="site" rel="noopener">Open Website</a>
+                  <a target="_blank" href="https://github.com/saurabhshalu/Sentiment-Analysis-Frontend" class="gitcode" rel="noopener">View code</a>
+                </div>
+              </div>
+            </span>
+            
+            <span class="slide">
+              <div class="c1">
+                <div class="head1">A Minimal URL</div>
+                <div class="content1">A minimal url shortner web application which helps users to short the links. It will also helps users to keep track of click count!</div>
+                <div class="links1">
+                  <a target="_blank" href="https://amini.ml" class="site" rel="noopener">Open Website</a>
+                  <a target="_blank" href="https://github.com/saurabhshalu/url-shortner-frontend" class="gitcode" rel="noopener">View code</a>
+                </div>
+              </div>
+            </span>
+
+
+            <span class="slide">
+              <div class="c1">
+                <div class="head1">GO Corona</div>
+                <div class="content1">This website is made to keep track of current covid19 cases, their recoveries, prevention methods and much more. It uses external api to collect the data.</div>
+                <div class="links1">
+                  <a target="_blank" href="https://github.com/saurabhshalu/COVID-19" class="gitcode" rel="noopener">View code</a>
+                </div>
+              </div>
+            </span>
+
+            <span class="slide">
+              <div class="c1">
+                <div class="head1">E-Notice Board</div>
+                <div class="content1">It is an online platform where faculties can share the notice regarding college, and students can access them easily. Teachers can also share notes. Various filter options available for easy use.</div>
+                <div class="links1">
+                  <a target="_blank" href="https://github.com/saurabhshalu/COVID-19" class="gitcode" rel="noopener">View code</a>
+                </div>
+              </div>
+            </span>
+
+            <span class="slide">
+              <div class="c1">
+                <div class="head1">Task Tracker</div>
+                <div class="content1">This website help users to track the task which are active or completed. It helps users to track account of time which is taken by each task!</div>
+                <div class="links1">
+                  <a target="_blank" href="https://github.com/saurabhshalu/TaskTracker" class="gitcode" rel="noopener">View code</a>
+                </div>
+              </div>
+            </span>
+
+            <span class="slide">
+              <div class="c1">
+                <div class="head1">College Fee Management System</div>
+                <div class="content1">This windows application is an platform where a university tracks all the records of thier students It tracks all due payments.</div>
+                <div class="links1">
+                  <a target="_blank" href="https://www.facebook.com/vermasoftware/" class="gitcode" rel="noopener">Request Demo</a>
+                </div>
+              </div>
+            </span>
+
+            <span class="slide">
+              <div class="c1">
+                <div class="head1">Payroll Management System</div>
+                <div class="content1">This windows application mainly targets small scale to medium scale companies, which helps to manage their employees data, genetate payment slip, export report in various formats, and much more.</div>
+                <div class="links1">
+                  <a target="_blank" href="https://www.youtube.com/watch?v=7bJfH4uRTAs" class="gitcode" rel="noopener">Watch Demo</a>
+                </div>
+              </div>
+            </span>
+
+            <span class="slide">
+              <div class="c1">
+                <div class="head1">Cheque Prints</div>
+                <div class="content1">This helps the organization to print all the cheques of the vendors automatically, just feed the data, and this software will do its job. This application is familiar with the layout of almost every Bank.</div>
+                <div class="links1">
+                  <a target="_blank" href="https://www.youtube.com/watch?v=G_AiY1cdCNQ" class="gitcode" rel="noopener">Watch Demo</a>
+                </div>
+              </div>
+            </span>
+
+          </div>
+        </div>
+        <a id="prev" class="control prev"></a>
+        <a id="next" class="control next"></a>
       </div>
+
+
+    
     </section>
     <section id="contact" class="contact">
       <div class="title">
@@ -298,7 +346,7 @@
       <p class="footer">2020 &copy; Saurabh Verma</p>
     </section>
   </main>
-  <script src="script.js?v=1.0"></script>
+  <script src="script.js?v=1.2"></script>
 </body>
 
 </html>
