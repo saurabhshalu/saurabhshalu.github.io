@@ -69,7 +69,9 @@ body {
     height: 80px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 #waiting div {
@@ -77,11 +79,30 @@ body {
     border: 4px solid #3477db;
     opacity: 1;
     border-radius: 50%;
-    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    -webkit-animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+            animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
 
 #waiting div:nth-child(2) {
-    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+            animation-delay: -0.5s;
+}
+
+@-webkit-keyframes lds-ripple {
+    0% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
+    }
 }
 
 @keyframes lds-ripple {
@@ -364,7 +385,9 @@ main {
     width: 80%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 nav {
@@ -435,7 +458,7 @@ nav ul li a:hover {
     .aboutme h2 {
         font-size: 20px;
         font-weight: 400;
-        color: #cardd6c9;
+        color: #cad6c9;
         padding-bottom: 6px
     }
     .aboutme p {
@@ -450,9 +473,14 @@ nav ul li a:hover {
     }
     .slides {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         padding-left: 10%;
         padding-right: 10%;
     }
@@ -475,7 +503,8 @@ nav ul li a:hover {
         position: relative;
         width: 400px;
         height: 300px;
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     }
     .wrapper {
         overflow: hidden;
@@ -486,6 +515,8 @@ nav ul li a:hover {
     }
     .slides {
         all: unset;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         position: relative;
         top: 0;
@@ -663,9 +694,16 @@ nav ul li a:hover {
     background: #141c3a;
     min-height: 100vh;
     margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .projects .title {
@@ -853,6 +891,8 @@ nav ul li a:hover {
 }
 
 .slides.shifting {
+    -webkit-transition: left .2s ease-out;
+    -o-transition: left .2s ease-out;
     transition: left .2s ease-out;
 }
 
@@ -860,10 +900,19 @@ nav ul li a:hover {
     width: 400px;
     height: 300px;
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
     position: relative;
     background: #FFCF47;
@@ -878,7 +927,8 @@ nav ul li a:hover {
     background: #fff;
     border-radius: 50px;
     margin-top: -20px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
     z-index: 2;
 }
 
@@ -902,26 +952,41 @@ nav ul li a:hover {
 
 .prev:active,
 .next:active {
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
 }
 
 .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 100%;
 }
 
 .card .head,
 .card .links,
 .card .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .card .head,
 .card .links {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     border-radius: 2px;
 }
 
@@ -931,7 +996,9 @@ nav ul li a:hover {
 }
 
 .card .content {
-    flex: 2;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
     text-align: center;
     padding: 10px 30px;
     font-weight: lighter;
