@@ -465,8 +465,8 @@ nav ul li a:hover {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		padding-left: 5%;
-		padding-right: 5%;
+		padding-left: 10%;
+		padding-right: 10%;
 	}
 
 	.slide {
