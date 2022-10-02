@@ -228,19 +228,34 @@ function slide(wrapper, items, prev, next) {
   }
 }
 
+const basicScrollTop = () => {
+  // The button
+  const btnTop = document.querySelector(".gotoTop");
+  // Reveal the button
+  const btnReveal = () => {
+    if (window.scrollY >= 300) {
+      btnTop.classList.add("is-visible");
+    } else {
+      btnTop.classList.remove("is-visible");
+    }
+  };
+  const TopscrollTo = () => {
+    window.scrollTo(0, 0);
+  };
+  // Listeners
+  window.addEventListener("scroll", btnReveal);
+  btnTop.addEventListener("click", TopscrollTo);
+};
+
 window.onload = function () {
-  var el1 = document.getElementsByClassName("designercoder")[0];
+  const el1 = document.getElementsByClassName("designercoder")[0];
   this.AddEvent(el1, "mouseleave", reset);
 
-  var el2 = document.getElementsByClassName("coder")[0];
+  const el2 = document.getElementsByClassName("coder")[0];
   this.AddEvent(el2, "mousemove", codermove);
 
-  var el3 = document.getElementsByClassName("designer")[0];
+  const el3 = document.getElementsByClassName("designer")[0];
   this.AddEvent(el3, "mousemove", designermove);
-
-  // if (document.getElementById("header").style.position == "fixed") {
-  //   this.alert("worked");
-  // }
 
   if (msieversion()) {
     document.getElementById("header").style.position = "relative";
@@ -249,4 +264,6 @@ window.onload = function () {
   document.getElementById("loader").style.display = "none";
 
   slide(slider, sliderItems, prev, next);
+
+  basicScrollTop();
 };
