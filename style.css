@@ -1025,3 +1025,26 @@ nav ul li a:hover {
   background: #000000;
   color: #ffffff;
 }
+
+.gotoTop {
+  z-index: 999;
+  position: fixed;
+  top: calc(100vh - 75px);
+  right: 25px;
+  cursor: pointer;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  transition: all .2s ease;
+  opacity: 0;
+}
+
+.gotoTop:hover {
+  transform: scale(1.1);
+}
+
+.is-visible {
+  opacity:1;
+}
