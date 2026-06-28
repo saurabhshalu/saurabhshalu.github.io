@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://skverma.in/sitemap.xml
+
+# Saurabh Verma — Full-Stack Developer Portfolio
+# https://skverma.in

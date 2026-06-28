@@ -1,510 +1,496 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Description" content="Portfolio of Saurabh Verma" />
-    <meta
-      name="Keywords"
-      content="Saurabh, Verma, Saurabh Verma, skverma, saurabhshalu, Portfolio, Full stack developer, Developer, Designer"
-    />
-    <title>Saurabh Verma</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css?v=2.0" />
-  </head>
-  <body>
-    <div id="loader">
-      <div id="waiting">
-        <div></div>
-        <div></div>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saurabh Verma | Software Engineer & Product Builder</title>
+  <meta name="description" content="Portfolio of Saurabh Verma - software engineer building web, mobile, and SaaS products. Enterprise full-stack experience with React, Node.js, Flutter, and DevOps.">
+  <meta name="keywords" content="Saurabh Verma, Full Stack Developer, Flutter Developer, React Developer, Software Engineer, India">
+  <meta name="author" content="Saurabh Verma">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://skverma.in/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Saurabh Verma | Software Engineer & Product Builder">
+  <meta property="og:description" content="Portfolio of Saurabh Verma - software engineer building web, mobile, and SaaS products.">
+  <meta property="og:url" content="https://skverma.in/">
+  <meta property="og:image" content="https://skverma.in/og-image.png">
+  <meta property="profile:first_name" content="Saurabh">
+  <meta property="profile:last_name" content="Verma">
+
+  <!-- llms.txt for AI crawlers -->
+  <link rel="alternate" type="text/plain" href="https://skverma.in/llms.txt" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@saurabh_shalu">
+  <meta name="twitter:title" content="Saurabh Verma | Software Engineer & Product Builder">
+  <meta name="twitter:description" content="Portfolio of Saurabh Verma - software engineer building web, mobile, and SaaS products.">
+  <meta name="twitter:image" content="https://skverma.in/og-image.png">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=4">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Saurabh Verma",
+      "givenName": "Saurabh",
+      "familyName": "Verma",
+      "jobTitle": "Software Engineer",
+      "url": "https://skverma.in",
+      "image": "https://avatars.githubusercontent.com/u/32974995?v=4",
+      "sameAs": [
+        "https://github.com/saurabhshalu",
+        "https://linkedin.com/in/saurabhshalu",
+        "https://twitter.com/saurabh_shalu",
+        "https://instagram.com/saurabh_shalu"
+      ],
+      "knowsAbout": ["React.js", "Node.js", "Spring Boot", "DevOps", "Flutter", "OpenShift", "Docker"]
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="loader" id="loader"><div class="loader__spinner"></div></div>
+
+  <header class="header" id="header">
+    <a href="/" class="header__logo" aria-label="Home">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <rect width="40" height="40" rx="8" fill="var(--clr-accent)"/>
+        <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="var(--clr-bg)" font-family="Inter, sans-serif" font-weight="800" font-size="20">SV</text>
+      </svg>
+    </a>
+    <nav class="header__nav" aria-label="Primary navigation">
+      <button class="header__theme" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="theme-icon moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="theme-icon sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+      <ul class="header__links" id="nav-links">
+        <li><a href="#about" class="header__link">About</a></li>
+        <li><a href="#skills" class="header__link">Skills</a></li>
+        <li><a href="#projects" class="header__link">Projects</a></li>
+        <li><a href="#experience" class="header__link">Experience</a></li>
+        <li><a href="#contact" class="header__link">Contact</a></li>
+      </ul>
+      <button class="header__mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <p class="hero__preface reveal">Hi, my name is</p>
+      <h1 class="hero__title reveal">Saurabh Verma.</h1>
+      <h2 class="hero__subtitle reveal">I build software that solves real problems.</h2>
+      <p class="hero__desc reveal">
+        I am a software engineer with 5+ years of experience spanning enterprise development,
+        full-stack web applications, mobile apps, and DevOps. I ship code that serves real users
+        and I care deeply about performance, security, and clean architecture.
+      </p>
+      <div class="hero__cta reveal">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="https://drive.google.com/file/d/1WI552EroXLClOyaWQE2CTnlXHYWyaMn6/view" class="btn btn--outline" target="_blank" rel="noopener noreferrer">View Resume</a>
       </div>
-    </div>
-    <header id="header">
-      <a href="./">
-        <div class="logo">
-          <img src="./img/logo.svg" alt="logo" />
-        </div>
-      </a>
-      <nav>
-        <input type="checkbox" id="nav" class="hidden" />
-        <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
-        <div class="nav-container">
-          <ul>
-            <li><a onclick="hideNav();" href="#home">Home</a></li>
-            <li><a onclick="hideNav();" href="#skills">Skills</a></li>
-            <li><a onclick="hideNav();" href="#projects">Projects</a></li>
-            <li><a onclick="hideNav();" href="#contact">Contact Me</a></li>
+      <div class="hero__social reveal" aria-label="Social links">
+        <a href="https://github.com/saurabhshalu" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        <a href="https://linkedin.com/in/saurabhshalu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="https://twitter.com/saurabh_shalu" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+        <a href="mailto:saurabhshalu@gmail.com" aria-label="Email"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="section__header reveal">
+        <h2 class="section__title"><span class="section__num">01.</span> About Me</h2>
+        <div class="section__line"></div>
+      </div>
+      <div class="about__grid">
+        <div class="about__content reveal">
+          <p>
+            I am a software engineer with 5+ years of enterprise experience and a passion for
+            building products that people actually use. My work spans high-throughput APIs,
+            DevOps on OpenShift, secure authentication systems, and end-to-end web and mobile
+            applications.
+          </p>
+          <p>
+            I have architected systems like <strong>QueryXpress</strong> (10K+ RPS, 99.9% success)
+            and <strong>Auth-Core</strong> (SSO library for 20+ apps). I also build personal projects
+            ranging from privacy-first health apps to real-time video conferencing platforms. My
+            approach combines enterprise discipline with startup speed - I leverage modern tools
+            including AI agents and agentic workflows to ship faster without compromising quality.
+          </p>
+          <p>Here are a few technologies I have been working with recently:</p>
+          <ul class="about__tech">
+            <li>React.js & Redux</li>
+            <li>Node.js & Express.js</li>
+            <li>Spring Boot</li>
+            <li>TypeScript</li>
+            <li>Docker & Kubernetes</li>
+            <li>MariaDB & MongoDB</li>
+            <li>Flutter & Dart</li>
+            <li>Keycloak & KrakenD</li>
           </ul>
         </div>
-      </nav>
-    </header>
-    <main id="home">
-      <a href="#projects">
-        <div class="designercoder">
-          <div class="coder">
-            <img class="coderimg" src="./img/coder.png" alt="coder" />
-          </div>
-          <div class="designer">
-            <img class="designerimg" src="./img/designer.png" alt="designer" />
-          </div>
-          <div class="designercoderdata">
-            <div class="design">
-              <div class="description">
-                <h1>designer</h1>
-                <p>
-                  UI/UX Designer with a passion for clean design patterns and
-                  thoughtful interactions.
-                </p>
-              </div>
+        <div class="about__image-wrapper reveal">
+          <div class="about__image">
+            <div class="about__image-placeholder">
+              <img src="https://avatars.githubusercontent.com/u/32974995?v=4" alt="Saurabh Verma">
             </div>
-            <div class="code">
-              <div class="description">
-                <h1>{coder;}</h1>
-                <p>
-                  Full Stack Developer who focuses on writing clean, simple and
-                  efficient code.
-                </p>
-              </div>
-            </div>
+            <div class="about__image-border"></div>
           </div>
         </div>
-      </a>
-      <section class="aboutme">
-        <div id="skills"></div>
-        <div class="info">
-          <h1>Hello, I'm Saurabh Verma.</h1>
-          <h2>I'm a full-stack web developer.</h2>
-          <p>
-            I design and code beautifully simple things, and I love what I do.
-          </p>
-        </div>
-      </section>
-      <section class="skills">
-        <div class="coloronly"></div>
-        <div class="row">
-          <div class="col col1">
-            <figure class="image">
-              <img alt="d_logo" src="./img/design_logo.svg" />
-            </figure>
-            <h1>Designer</h1>
-            <p>
-              UI/UX Designer with a passion for designing beautiful and
-              functional user experiences.
-            </p>
-            <p class="list-title">I love to design</p>
-            <ul>
-              <li>UI/UX</li>
-              <li>Web</li>
-              <li>Mobile</li>
-            </ul>
-            <p class="list-title">Dev Tools:</p>
-            <ul>
-              <li>Adobe XD</li>
-              <li>Photoshop</li>
-              <li>Pen &amp; Paper</li>
-            </ul>
-          </div>
-          <div class="col col2">
-            <figure class="image">
-              <img alt="full" src="./img/full_logo.svg" />
-            </figure>
-            <h1>Full-stack Developer</h1>
-            <p>
-              I like to code things from scratch, and enjoy bringing ideas to
-              life in the browser.
-            </p>
-            <p class="list-title">Languages I speak</p>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>MERN stack</li>
-              <li>Firebase</li>
-              <li>React Native</li>
-              <li>Angular</li>
-              <li>Java</li>
-              <li>Spring Boot</li>
-              <li>Flutter</li>
-              <li>MongoDB</li>
-            </ul>
-          </div>
-          <div class="col col3">
-            <figure class="image">
-              <img alt="t_logo" src="./img/tools_logo.svg" />
-            </figure>
-            <h1>IDEs &amp; Editors</h1>
-            <p>
-              To carve everything elegantly, I prefer to use several tools to
-              utilize their features at best.
-            </p>
-            <p class="list-title">Dev Tools:</p>
-            <ul>
-              <li>Atom</li>
-              <li>VSCode</li>
-              <li>Spring Tool Suite</li>
-              <li>Eclipse</li>
-              <li>Visual Studio</li>
-              <li>PyCharm</li>
-              <li>Android Studio</li>
-              <li>Github</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="projects">
-        <div id="projects"></div>
-        <p class="title">projects</p>
-        <div id="slider" class="slider">
-          <div class="wrapper">
-            <div id="slides" class="slides">
-              <span class="slide">
-                <div class="card">
-                  <div class="head">Yet Another Tutorial (YAT)</div>
-                  <div class="content">
-                    This web application lets you publish your own tutorials and
-                    read the tutorials of others. Easier to naviate, use, and
-                    create your own tutorials.
-                    <ul class="tags">
-                      <li class="tag" style="--color: #efd81d">
-                        <span>Next.js</span>
-                      </li>
-                      <li class="tag" style="--color: #41b883">
-                        <span>Firebase</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="links">
-                    <a
-                      target="_blank"
-                      href="https://yatutorial.skverma.ml"
-                      class="site"
-                      rel="noopener"
-                      >Open Website</a
-                    >
-                  </div>
-                </div>
-              </span>
-              <span class="slide">
-                <div class="card">
-                  <div class="head">Surabhi Art Gallery</div>
-                  <div class="content">
-                    SurabhiArtGallery is fullstack E-commerce web application
-                    with all the functionalities integrated with payment
-                    gateway, email notification, stock management, delivery
-                    status and much more.
-                    <ul class="tags">
-                      <li class="tag" style="--color: #efd81d">
-                        <span>MERN Stack</span>
-                      </li>
-                      <li class="tag" style="--color: #41b883">
-                        <span>Firebase</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="links">
-                    <a
-                      target="_blank"
-                      href="https://art.skverma.ml"
-                      class="site"
-                      rel="noopener"
-                      >Open Website</a
-                    >
-                  </div>
-                </div>
-              </span>
-              <span class="slide">
-                <div class="card">
-                  <div class="head">Whatsapp Clone</div>
-                  <div class="content">
-                    I made this web app to learn about how socket connection
-                    work, and I have implemented live chat feature with last
-                    seen functionality.
-                    <ul class="tags">
-                      <li class="tag" style="--color: #efd81d">
-                        <span>Next.js</span>
-                      </li>
-                      <li class="tag" style="--color: #41b883">
-                        <span>socket.io</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="links">
-                    <a
-                      target="_blank"
-                      href="https://github.com/saurabhshalu/whatsapp-clone-nextjs"
-                      class="gitcode"
-                      rel="noopener"
-                      >View code</a
-                    >
-                    <a
-                      target="_blank"
-                      href="https://whatsapp.skverma.ml"
-                      class="site"
-                      rel="noopener"
-                      >Open Website</a
-                    >
-                  </div>
-                </div>
-              </span>
-              <span class="slide">
-                <div class="card">
-                  <div class="head">A Minimal URL</div>
-                  <div class="content">
-                    A minimal url shortner web application which helps users to
-                    short the links. It will also helps users to keep track of
-                    click count!
-                    <ul class="tags">
-                      <li class="tag" style="--color: #efd81d">
-                        <span>Angular</span>
-                      </li>
-                      <li class="tag" style="--color: #41b883">
-                        <span>Netlify Functions</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="links">
-                    <a
-                      target="_blank"
-                      href="https://url.skverma.ml"
-                      class="site"
-                      rel="noopener"
-                      >Open Website</a
-                    >
-                    <a
-                      target="_blank"
-                      href="https://github.com/saurabhshalu/url-shortner-frontend"
-                      class="gitcode"
-                      rel="noopener"
-                      >View code</a
-                    >
-                  </div>
-                </div>
-              </span>
-              <span class="slide">
-                <div class="card">
-                  <div class="head">Sentiment Analysis of Tweets</div>
-                  <div class="content">
-                    By using this site, it will be easier to analyse tweets in
-                    bulk and visualize the sentiments with graphs and charts.
-                    <ul class="tags">
-                      <li class="tag" style="--color: #efd81d">
-                        <span>Angular</span>
-                      </li>
-                      <li class="tag" style="--color: #41b883">
-                        <span>Flask</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="links">
-                    <a
-                      target="_blank"
-                      href="https://github.com/saurabhshalu/Sentiment-Analysis-Frontend"
-                      class="gitcode"
-                      rel="noopener"
-                      >View code</a
-                    >
-                  </div>
-                </div>
-              </span>
-
-              <span class="slide">
-                <div class="card">
-                  <div class="head">GO Corona</div>
-                  <div class="content">
-                    This website is made to keep track of current covid19 cases,
-                    their recoveries, prevention methods and much more. It uses
-                    external api to collect the data.
-                    <ul class="tags">
-                      <li class="tag" style="--color: #efd81d">
-                        <span>Angular</span>
-                      </li>
-                      <li class="tag" style="--color: #41b883">
-                        <span>OpenSource API</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="links">
-                    <a
-                      target="_blank"
-                      href="https://github.com/saurabhshalu/COVID-19"
-                      class="gitcode"
-                      rel="noopener"
-                      >View code</a
-                    >
-                  </div>
-                </div>
-              </span>
-              <span class="slide">
-                <div class="card">
-                  <div class="head">E-Notice Board</div>
-                  <div class="content">
-                    It is an online platform where faculties can share the
-                    notice regarding college, and students can access them
-                    easily. Teachers can also share notes. Various filter
-                    options available for easy use.
-                    <ul class="tags">
-                      <li class="tag" style="--color: #efd81d">
-                        <span>JSP</span>
-                      </li>
-                      <li class="tag" style="--color: #41b883">
-                        <span>Servlets</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="links">
-                    <a
-                      target="_blank"
-                      href="https://github.com/saurabhshalu/E-NoticeBoard"
-                      class="gitcode"
-                      rel="noopener"
-                      >View code</a
-                    >
-                  </div>
-                </div>
-              </span>
-
-              <span class="slide">
-                <div class="card">
-                  <div class="head">College Fee Management System</div>
-                  <div class="content">
-                    This windows application is an platform where a university
-                    tracks all the records of thier students It tracks all due
-                    payments.
-                    <ul class="tags">
-                      <li class="tag" style="--color: #efd81d">
-                        <span>VB.Net</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="links">
-                    <a
-                      target="_blank"
-                      href="https://www.facebook.com/vermasoftware/"
-                      class="gitcode"
-                      rel="noopener"
-                      >Request Demo</a
-                    >
-                  </div>
-                </div>
-              </span>
-              <span class="slide">
-                <div class="card">
-                  <div class="head">Payroll Management System</div>
-                  <div class="content">
-                    This windows application mainly targets small scale to
-                    medium scale companies, which helps to manage their
-                    employees data, genetate payment slip, export report in
-                    various formats, and much more.
-                    <ul class="tags">
-                      <li class="tag" style="--color: #efd81d">
-                        <span>VB.Net</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="links">
-                    <a
-                      target="_blank"
-                      href="https://www.youtube.com/watch?v=7bJfH4uRTAs"
-                      class="gitcode"
-                      rel="noopener"
-                      >Watch Demo</a
-                    >
-                  </div>
-                </div>
-              </span>
-              <span class="slide">
-                <div class="card">
-                  <div class="head">Cheque Prints</div>
-                  <div class="content">
-                    This helps the organization to print all the cheques of the
-                    vendors automatically, just feed the data, and this software
-                    will do its job. This application is familiar with the
-                    layout of almost every Bank.
-                    <ul class="tags">
-                      <li class="tag" style="--color: #efd81d">
-                        <span>VB.Net</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="links">
-                    <a
-                      target="_blank"
-                      href="https://www.youtube.com/watch?v=G_AiY1cdCNQ"
-                      class="gitcode"
-                      rel="noopener"
-                      >Watch Demo</a
-                    >
-                  </div>
-                </div>
-              </span>
-            </div>
-          </div>
-          <a id="prev" class="control prev"></a>
-          <a id="next" class="control next"></a>
-        </div>
-      </section>
-      <section id="contact" class="contact">
-        <div class="title">
-          <p>CONTACT ME</p>
-        </div>
-        <div class="items">
-          <div class="item">
-            <a
-              href="mailto:saurabhshalu@gmail.com"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="./social/gmail.svg" alt="mail" />
-            </a>
-          </div>
-          <div class="item">
-            <a
-              href="https://github.com/saurabhshalu"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="./social/github.svg" alt="github" />
-            </a>
-          </div>
-          <div class="item">
-            <a
-              href="https://www.linkedin.com/in/saurabhshalu"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="./social/linkedin.svg" alt="linkedin" />
-            </a>
-          </div>
-          <div class="item">
-            <a
-              href="https://twitter.com/saurabh_shalu"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="./social/twitter.svg" alt="twitter" />
-            </a>
-          </div>
-          <div class="item">
-            <a
-              href="https://www.instagram.com/saurabh_shalu/"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="./social/instagram.svg" alt="instagram" />
-            </a>
-          </div>
-        </div>
-        <p class="footer">2022 &copy; Saurabh Verma</p>
-      </section>
-      <div class="gotoTop">
-        <img src="./social/top-arrow.png" height="100%" width="100%" />
       </div>
-    </main>
-    <script src="script.js?v=1.2"></script>
-  </body>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+      <div class="section__header reveal">
+        <h2 class="section__title"><span class="section__num">02.</span> Skills & Technologies</h2>
+        <div class="section__line"></div>
+      </div>
+      <div class="skills__grid">
+        <div class="skills__category reveal">
+          <h3 class="skills__cat-title">Frontend</h3>
+          <div class="skills__tags">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Redux</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Material UI</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">TypeScript</span>
+          </div>
+        </div>
+        <div class="skills__category reveal">
+          <h3 class="skills__cat-title">Backend</h3>
+          <div class="skills__tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+        </div>
+        <div class="skills__category reveal">
+          <h3 class="skills__cat-title">DevOps & Cloud</h3>
+          <div class="skills__tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes/OpenShift</span>
+            <span class="skill-tag">GitLab CI/CD</span>
+            <span class="skill-tag">Azure DevOps</span>
+            <span class="skill-tag">SonarQube</span>
+            <span class="skill-tag">Nginx</span>
+            <span class="skill-tag">Linux</span>
+          </div>
+        </div>
+        <div class="skills__category reveal">
+          <h3 class="skills__cat-title">Database & Auth</h3>
+          <div class="skills__tags">
+            <span class="skill-tag">MariaDB</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Redis</span>
+            <span class="skill-tag">Keycloak</span>
+            <span class="skill-tag">KrakenD</span>
+            <span class="skill-tag">Firebase</span>
+          </div>
+        </div>
+        <div class="skills__category reveal">
+          <h3 class="skills__cat-title">Mobile & Desktop</h3>
+          <div class="skills__tags">
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">React Native</span>
+            <span class="skill-tag">Dart</span>
+            <span class="skill-tag">VB.Net</span>
+            <span class="skill-tag">SQLite</span>
+          </div>
+        </div>
+        <div class="skills__category reveal">
+          <h3 class="skills__cat-title">Tools & AI</h3>
+          <div class="skills__tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitLab</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Adobe XD</span>
+            <span class="skill-tag">AI Agents</span>
+            <span class="skill-tag">Agentic Workflows</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section projects" id="projects">
+      <div class="section__header reveal">
+        <h2 class="section__title"><span class="section__num">03.</span> Featured Projects</h2>
+        <div class="section__line"></div>
+      </div>
+      <div class="projects__grid">
+        <article class="project-card reveal">
+          <div class="project-card__visual" style="--project-color:#0ea5e9;">
+            <div class="project-card__icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+            <div class="project-card__links">
+              <a href="https://ayusense.skverma.in" target="_blank" rel="noopener noreferrer" aria-label="Live site"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">AyuSense</h3>
+            <p class="project-card__desc">A privacy-first family health records app built with Flutter. Features on-device OCR for scanning blood tests, medicine tracking, vitals logging, and encrypted local storage - your data never leaves your device.</p>
+            <ul class="project-card__tags"><li>Flutter</li><li>Dart</li><li>SQLite</li><li>OCR</li><li>Encryption</li></ul>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__visual" style="--project-color:#10b981;">
+            <div class="project-card__icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+            <div class="project-card__links">
+              <a href="https://gariva.skverma.in" target="_blank" rel="noopener noreferrer" aria-label="Live site"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Gariva</h3>
+            <p class="project-card__desc">A garage management platform that simplifies vehicle tracking, service scheduling, and inventory management. Built with a modern full-stack architecture for real-time updates and seamless workflows.</p>
+            <ul class="project-card__tags"><li>React</li><li>Node.js</li><li>MongoDB</li><li>WebSockets</li></ul>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__visual" style="--project-color:#8b5cf6;">
+            <div class="project-card__icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
+            <div class="project-card__links">
+              <a href="https://meet.skverma.in" target="_blank" rel="noopener noreferrer" aria-label="Live site"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">meetIO</h3>
+            <p class="project-card__desc">A real-time video conferencing platform powered by WebRTC. Supports multi-user rooms, screen sharing, and secure peer-to-peer connections for seamless remote collaboration.</p>
+            <ul class="project-card__tags"><li>WebRTC</li><li>React</li><li>Node.js</li><li>Socket.io</li></ul>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__visual" style="--project-color:#f59e0b;">
+            <div class="project-card__icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
+            <div class="project-card__links">
+              <a href="https://art.skverma.in" target="_blank" rel="noopener noreferrer" aria-label="Live site"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Surabhi Art Gallery</h3>
+            <p class="project-card__desc">A full-stack e-commerce platform for art sales, featuring integrated payment gateway (Razorpay), stock management, email notifications, delivery tracking, and an admin dashboard for order management.</p>
+            <ul class="project-card__tags"><li>MERN Stack</li><li>Razorpay</li><li>Redux</li><li>Firebase</li></ul>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__visual" style="--project-color:#ec4899;">
+            <div class="project-card__icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+            <div class="project-card__links">
+              <a href="https://vivah.skverma.in" target="_blank" rel="noopener noreferrer" aria-label="Live site"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Vivah</h3>
+            <p class="project-card__desc">A premium wedding planning SaaS platform. Manage guests, venues, budgets, and tasks with smart RSVPs, automated reminders, and magic-link authentication.</p>
+            <ul class="project-card__tags"><li>React</li><li>Fastify</li><li>MySQL</li><li>Web Push</li></ul>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__visual" style="--project-color:#0061fe;">
+            <div class="project-card__icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
+            <div class="project-card__links">
+              <a href="https://share.skverma.in" target="_blank" rel="noopener noreferrer" aria-label="Live site"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">FileShare</h3>
+            <p class="project-card__desc">A secure file sharing platform with password-protected links, automatic expiry, and click analytics. Dropbox-inspired interface with drag-and-drop uploads.</p>
+            <ul class="project-card__tags"><li>React</li><li>Node.js</li><li>SQLite</li><li>Multer</li></ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="other-projects">
+        <h3 class="other-projects__title reveal">Other Noteworthy Projects</h3>
+        <div class="other-projects__grid">
+          <article class="other-card reveal">
+            <div class="other-card__header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              <a href="https://bingo.skverma.in" target="_blank" rel="noopener noreferrer" aria-label="Live site"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+            <h4>Bingo Extended</h4>
+            <p>A real-time multiplayer Bingo game with live lobbies, chat, and instant state sync across all connected players.</p>
+            <div class="other-card__tags">React - Node.js - WebSockets</div>
+          </article>
+
+          <article class="other-card reveal">
+            <div class="other-card__header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              <a href="https://googlethat4u.skverma.in" target="_blank" rel="noopener noreferrer" aria-label="Live site"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+            <h4>GoogleThat4U</h4>
+            <p>A fun "Let Me Google That For You" clone. Drop a lazy search query and get a shareable animated link that types out the search for the recipient.</p>
+            <div class="other-card__tags">React - Animation - Netlify</div>
+          </article>
+
+          <article class="other-card reveal">
+            <div class="other-card__header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              <a href="https://url.skverma.in" target="_blank" rel="noopener noreferrer" aria-label="Live site"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+            <h4>URL Shortener</h4>
+            <p>A minimal URL shortener with click analytics. Simple, fast, and completely free with no ads.</p>
+            <div class="other-card__tags">Angular - Netlify Functions</div>
+          </article>
+
+          <article class="other-card reveal">
+            <div class="other-card__header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              <a href="https://yatutorial.skverma.in" target="_blank" rel="noopener noreferrer" aria-label="Live site"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+            <h4>YAT - Yet Another Tutorial</h4>
+            <p>A tutorial publishing platform where users can create and share programming tutorials.</p>
+            <div class="other-card__tags">Next.js - Firebase</div>
+          </article>
+
+          <article class="other-card reveal">
+            <div class="other-card__header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <h4>College Fee Management</h4>
+            <p>Windows desktop application for universities to track student records and due payments.</p>
+            <div class="other-card__tags">VB.Net - SQL Server - Crystal Reports</div>
+          </article>
+
+          <article class="other-card reveal">
+            <div class="other-card__header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h4>Payroll Management</h4>
+            <p>Desktop payroll solution for SMEs - employee data, payment slips, tax reports, exports.</p>
+            <div class="other-card__tags">VB.Net - SQL Server - Crystal Reports</div>
+          </article>
+
+          <article class="other-card reveal">
+            <div class="other-card__header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <h4>Cheque Prints</h4>
+            <p>Automated cheque printing software supporting layouts of almost every major bank.</p>
+            <div class="other-card__tags">VB.Net - Print Dialog APIs</div>
+          </article>
+
+          <article class="other-card reveal">
+            <div class="other-card__header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h4>Envelope Prints</h4>
+            <p>Desktop utility for printing personalized envelopes in bulk for business correspondence.</p>
+            <div class="other-card__tags">VB.Net - Print Dialog APIs</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section experience" id="experience">
+      <div class="section__header reveal">
+        <h2 class="section__title"><span class="section__num">04.</span> Experience</h2>
+        <div class="section__line"></div>
+      </div>
+      <div class="experience__timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-item__marker"></div>
+          <div class="timeline-item__content">
+            <div class="timeline-item__header">
+              <h3>IT Analyst</h3>
+              <span class="timeline-item__badge">Present</span>
+            </div>
+            <span class="timeline-item__company">Tata Consultancy Services</span>
+            <p class="timeline-item__time">February 2024 - Present</p>
+            <ul class="timeline-item__list">
+              <li>Lead DevOps and deployment for multiple client-facing applications on <strong>RedHat OpenShift</strong>, including VM- and pod-based deployments, DB patching, and versioned releases.</li>
+              <li>Architected <strong>QueryXpress and Auth-Core</strong>, enabling high-throughput secure APIs and unified authentication across 20+ applications.</li>
+              <li>Standardized <strong>CI/CD, Trivy vulnerability scanning, and SonarQube code quality checks</strong>, improving release reliability by 40%.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-item__marker"></div>
+          <div class="timeline-item__content">
+            <div class="timeline-item__header">
+              <h3>System Engineer</h3>
+            </div>
+            <span class="timeline-item__company">Tata Consultancy Services</span>
+            <p class="timeline-item__time">April 2021 - January 2024</p>
+            <ul class="timeline-item__list">
+              <li>Developed <strong>CRMS portal</strong> for a leading ISP, managing production servers, DR, and VM-based deployments with Galera cluster and MaxScale for HA databases.</li>
+              <li><strong>Led UI/frontend logic</strong> for Dealer &amp; Voucher Management Systems (team of 10) and actively developed CMS (team of 4), delivering all projects in parallel.</li>
+              <li>Mentored junior developers and resolved a <strong>critical privilege escalation vulnerability</strong>, securing applications from unauthorized access.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-item__marker"></div>
+          <div class="timeline-item__content">
+            <div class="timeline-item__header">
+              <h3>Assistant System Engineer - Trainee</h3>
+            </div>
+            <span class="timeline-item__company">Tata Consultancy Services</span>
+            <p class="timeline-item__time">September 2020 - March 2021</p>
+            <ul class="timeline-item__list">
+              <li>Developed an <strong>automated project audit web app</strong>, reducing audit time by 60% and improving accuracy by 75%.</li>
+              <li>Integrated frontend with <strong>CAS Server for single sign-on authentication</strong> and authorization.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="resume-download reveal">
+        <a href="https://drive.google.com/file/d/1WI552EroXLClOyaWQE2CTnlXHYWyaMn6/view" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;vertical-align:middle;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download My Resume
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="contact__inner reveal">
+        <p class="contact__preface">05. What's Next?</p>
+        <h2 class="contact__title">Get In Touch</h2>
+        <p class="contact__desc">
+          My inbox is always open for interesting conversations, collaboration ideas, or just to say hi.
+        </p>
+        <a href="mailto:saurabhshalu@gmail.com" class="btn btn--primary btn--lg">Say Hello</a>
+        <div class="contact__social">
+          <a href="https://github.com/saurabhshalu" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+          <a href="https://linkedin.com/in/saurabhshalu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://twitter.com/saurabh_shalu" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+          <a href="https://instagram.com/saurabh_shalu" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="https://github.com/saurabhshalu" target="_blank" rel="noopener noreferrer" class="footer__link">Designed &amp; Built by Saurabh Verma</a>
+    <p class="footer__copy">&copy; <span id="year"></span> Saurabh Verma. All rights reserved.</p>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js?v=4"></script>
+</body>
 </html>

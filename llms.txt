@@ -1,0 +1,40 @@
+# Saurabh Verma
+
+> Full-Stack Software Engineer & Product Builder building practical apps that solve real problems.
+
+## Overview
+
+Saurabh Verma is a software engineer at Tata Consultancy Services (TCS) with expertise in building modern full-stack web and mobile applications. His work spans health-tech, SaaS platforms, real-time collaboration tools, and developer utilities — all designed to be privacy-first, performant, and user-friendly.
+
+## Tech Stack
+
+- **Frontend:** React 19, TypeScript, Vite, Tailwind CSS, shadcn/ui, Next.js
+- **Backend:** Node.js, Express, Fastify, Socket.IO, WebRTC
+- **Mobile:** Flutter, Dart, Firebase
+- **Data:** MySQL, SQLite, Firebase, Google Drive API
+- **DevOps:** Docker, Nginx, Certbot, Oracle Cloud, Vercel, Netlify
+- **AI/ML:** OCR (ML Kit), TensorFlow Lite, Gemini integration
+
+## Experience
+
+- **Tata Consultancy Services (TCS)** — Assistant System Engineer (2022–present)
+  - Full-stack development for enterprise clients
+  - Built and maintained production systems at scale
+- Previously worked on hospital management, financial reconciliation, and insurance claim processing systems
+
+## Notable Projects
+
+- [AyuSense](https://ayusense.skverma.in) — Privacy-first offline family health records app with on-device OCR, medicine alarms, and milestone tracking. Flutter + SQLite + Firebase.
+- [Gariva](https://gariva.skverma.in) — SaaS garage management platform for Indian workshops. Job cards, billing, inventory, staff management. React + Fastify + MySQL.
+- [meetIO](https://meet.skverma.in) — Real-time video conferencing with screen sharing. React + WebRTC + Socket.IO.
+- [Vivah](https://vivah.skverma.in) — Wedding planning SaaS for Indian families. Guest management, venue coordination, task lists, vendor tracking.
+- [Bingo Extended](https://bingo.skverma.in) — Real-time multiplayer bingo with custom rules. React + Socket.IO.
+- [Surabhi Art Gallery](https://art.skverma.in) — E-commerce platform for handmade art and crafts.
+- [GoogleThat4U](https://googlethat4u.skverma.in) — LMGTFY-style search redirect tool.
+
+## Contact
+
+- [Portfolio](https://skverma.in)
+- [GitHub](https://github.com/saurabhshalu)
+- [LinkedIn](https://linkedin.com/in/saurabhshalu)
+- [Email](mailto:skvermacodes@gmail.com)
