@@ -169,6 +169,10 @@ strong {
   text-decoration: none;
 }
 
+[data-theme='dark'] .header__logo img {
+  filter: invert(1);
+}
+
 .header__nav {
   display: flex;
   align-items: center;
