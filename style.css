@@ -557,8 +557,21 @@ main {
   color: var(--clr-white);
 }
 
+.project-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .project-card__icon svg {
   opacity: 0.9;
+}
+
+.project-card__icon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
 }
 
 .project-card__links {
@@ -893,6 +906,7 @@ main {
 /* Resume download */
 .resume-download {
   text-align: center;
+  margin-top: 60px;
 }
 
 /* Nav active */

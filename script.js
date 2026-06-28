@@ -92,4 +92,13 @@
   // --- Footer Year ---
   const yearSpan = document.getElementById('year');
   if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+  // --- Dynamic Experience Years ---
+  const start = new Date(2020, 8); // Sept 2020
+  const now = new Date();
+  const months = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
+  const years = Math.floor(months / 12);
+  document.querySelectorAll('.exp-years').forEach(el => {
+    el.textContent = years + '+';
+  });
 })();
